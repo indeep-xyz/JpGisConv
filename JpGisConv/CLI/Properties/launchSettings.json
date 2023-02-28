@@ -1,0 +1,32 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "CLI - SVG": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=svg\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_02_GML\\N03-22_02_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\"\r\n--max-width=4000"
+    },
+    "CLI - SVG_PATH": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=svgPath\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_02_GML\\N03-22_02_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\"\r\n--max-width=4000"
+    },
+    "CLI - CSV": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=csv\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_01_GML\\N03-22_01_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\""
+    },
+    "CLI - SVG_WHOLE": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=svg\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_GML\\N03-22_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\"\r\n--max-width=10000"
+    },
+    "CLI - INFO": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=info\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_02_GML\\N03-22_02_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\"\r\n"
+    },
+    "CLI - INFO_WHOLE": {
+      "commandName": "Project",
+      "commandLineArgs": "--mode=info\r\n--gis=\"G:\\MyData\\development\\matirial\\国土地理院\\GIS\\2022\\N03-20220101_GML\\N03-22_220101.xml\"\r\n--landarea=\"G:\\MyData\\development\\matirial\\国土地理院\\面積\\R1_R4_all_mencho.csv\"\r\n"
+    }
+  }
+}
