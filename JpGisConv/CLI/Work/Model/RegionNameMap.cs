@@ -30,16 +30,11 @@
         public string CityName { get; } = string.Empty;
 
         /// <summary>
-        /// 町字。
-        /// </summary>
-        public string TownName { get; } = string.Empty;
-
-        /// <summary>
         /// 値をグルーピングするためのキー情報。
         /// </summary>
         public string GroupKey
         {
-            get => $"{PrefectureName}_{SubPrefectureName}_{CountyName}_{CityName}_{TownName}";
+            get => $"{PrefectureName}_{SubPrefectureName}_{CountyName}_{CityName}";
         }
 
         /// <summary>
@@ -50,14 +45,12 @@
             string prefectureName,
             string subPrefectureName,
             string countyName,
-            string cityName,
-            string townName)
+            string cityName)
         {
             PrefectureName = prefectureName;
             SubPrefectureName = subPrefectureName;
             CountyName = countyName;
             CityName = cityName;
-            TownName = townName;
         }
 
         /// <summary>
@@ -70,30 +63,7 @@
                     map.PrefectureName,
                     map.SubPrefectureName,
                     map.CountyName,
-                    map.CityName,
-                    map.TownName)
+                    map.CityName)
         { }
-
-        ///// <summary>
-        ///// 行政区域コードまわりの情報を合成して更新する。
-        ///// ※既に保持しているコードにのみ更新を行う。処理後に件数は増減しない
-        ///// </summary>
-        ///// <param name="sourceAacList">行政区域コードまわりの情報</param>
-        ///// <returns></returns>
-        //public void UpdateExistenceCodeList(
-        //    List<DistrictYomi> sourceAacList)
-        //{
-        //    // TODO マージする必要ないのでは（仮名側に都道府県～仮名まであるので、抽出だけでよい）
-        //    var aycList = new List<DistrictYomi>();
-
-        //    foreach(var ayc in AdministrativeYomiCodeList)
-        //    {
-        //        aycList.Add(ayc.MergeFrom(sourceAacList));
-        //    }
-
-        //    AdministrativeYomiCodeList = aycList;
-        //}
-
-        //#endregion 保持データの加工・更新処理
     }
 }

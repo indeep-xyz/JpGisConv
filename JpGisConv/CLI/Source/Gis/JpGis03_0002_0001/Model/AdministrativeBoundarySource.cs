@@ -62,8 +62,7 @@ namespace JpGisConv.Source.Gis.JpGis03_0002_0001.Model
             Name = new(ExtractTextValue(xmlDoc, xmlNamespace, "prefectureName"),
                        ExtractTextValue(xmlDoc, xmlNamespace, "subPrefectureName"),
                        ExtractTextValue(xmlDoc, xmlNamespace, "countyName"),
-                       ExtractTextValue(xmlDoc, xmlNamespace, "cityName"),
-                       string.Empty);
+                       ExtractTextValue(xmlDoc, xmlNamespace, "cityName"));
 
             AdministrativeAreaCode = ExtractTextValue(xmlDoc, xmlNamespace, "administrativeAreaCode");
         }

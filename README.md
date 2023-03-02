@@ -68,14 +68,12 @@ SVG 出力時、 JSON ファイルも自動出力する。
 ```js
 {
   "WholeArea": 377973.26           // ファイル内全体の面積合計（㎢）
-  AdministrativeBoundaryList: [    // 区域単位の情報。区域は「都道府県」「支庁」「群」「市区町村」「町字」で一意となる
+  AdministrativeBoundaryList: [    // 区域単位の情報。区域は「都道府県」「支庁」「群」「市区町村」で一意となる
     {
       "PrefectureName": "青森県",  // 都道府県名
-      "SubPrefectureName": null,   // 支庁名
-      "CountyName": "三戸郡",      // 群名
+      "SubPrefectureName": null,   // 振興局名
+      "CountyName": "三戸郡",      // 郡・政令都市名
       "CityName": "新郷村",        // 市区町村名
-      "TownName": null,            // 町字名
-      "Yomi": null,                // 読み
       "Width": 475,                // ピクセル基準の座標横幅
       "Height": 235,               // ピクセル基準の座標縦幅
       "CoordinateOnWholeSource": {

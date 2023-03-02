@@ -42,23 +42,16 @@ namespace JpGisConv.Work.File.Output.Csv.Model
         public string CityName { get; } = string.Empty;
 
         /// <summary>
-        /// 町字。
-        /// </summary>
-        [Index(4)]
-        [Name("町字")]
-        public string TownName { get; } = string.Empty;
-
-        /// <summary>
         /// 行政区域コード。
         /// </summary>
-        [Index(5)]
+        [Index(4)]
         [Name("行政区域コード")]
         public string AdministrativeAreaCodeList { get; } = string.Empty;
 
         /// <summary>
         /// 経緯度基準の面情報。
         /// </summary>
-        [Index(6)]
+        [Index(5)]
         [Name("経緯度基準の面情報")]
         public string PolygonList { get; } = string.Empty;
 
@@ -74,7 +67,6 @@ namespace JpGisConv.Work.File.Output.Csv.Model
             SubPrefectureName = ab.Name.SubPrefectureName;
             CountyName = ab.Name.CountyName;
             CityName = ab.Name.CityName;
-            TownName = ab.Name.TownName;
 
             // 行政区域コード
             AdministrativeAreaCodeList = JoinAsString(ab.AreaList.Select(aac => aac.JoinWithAreaAsString()));

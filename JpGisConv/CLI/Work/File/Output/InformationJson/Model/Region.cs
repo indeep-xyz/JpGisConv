@@ -35,18 +35,6 @@ namespace JpGisConv.Work.File.Output.InformationJson.Model
         public string? CityName { get; set; }
 
         /// <summary>
-        /// 町字。
-        /// </summary>
-        [DataMember]
-        public string? TownName { get; set; }
-
-        /// <summary>
-        /// 都道府県～市区町村の末端にあたる部分の読み仮名。
-        /// </summary>
-        [DataMember]
-        public string? Yomi { get; set; }
-
-        /// <summary>
         /// 区域のピクセルサイズ。（横幅）
         /// </summary>
         [DataMember]
@@ -82,7 +70,6 @@ namespace JpGisConv.Work.File.Output.InformationJson.Model
             SubPrefectureName = ab.Name.SubPrefectureName.TryConvertEmptyToNull();
             CountyName = ab.Name.CountyName.TryConvertEmptyToNull();
             CityName = ab.Name.CityName.TryConvertEmptyToNull();
-            TownName = ab.Name.TownName.TryConvertEmptyToNull();
 
             // ピクセル基準の縦横幅
             Width = decimal.ToInt16(ab.PixelRectangularPolygonStorage!.Width);
